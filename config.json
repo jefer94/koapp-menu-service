@@ -1,0 +1,49 @@
+{
+  "name": "menu",
+  "identifier": "menu",
+  "description": {
+    "es-ES": "",
+    "en-US": ""
+  },
+  "documentation": {
+    "es-ES": "services/menu/docs/es_ES.md",
+    "en-US": "services/menu/docs/en_US.md"
+  },
+  "descriptionShort": {
+    "es-ES": "",
+    "en-US": ""
+  },
+  "icon": "room",
+  "type": "A",
+  "version": "0.0.1",
+  "author": "Jeferson",
+  "category": ["others"],
+  "price": 0,
+  "subscription": false,
+  "canContain": false,
+  "platforms": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "files": [
+    "services/menu/service.js"
+  ],
+  "scope": {"demoKey": "demo text"},
+  "libs": [],
+  "config": [],
+  "showOn": {
+    "menu": true,
+    "market": true,
+    "dragDrop": true
+  },
+  "images": {
+    "list": "services/menu/images/list.png",
+    "screenshots": [
+      "services/menu/images/screenshot01.png"
+    ],
+    "popover": "services/menu/images/popover.png",
+    "banner": "services/menu/images/banner.png",
+    "logo": "services/menu/images/logo.png"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "menu",
+  "authors": "Jeferson",
+  "description": "",
+  "keywords": [
+    "kingofapp",
+    "service"
+  ],
+  "license": "MIT",
+  "homepage": "github.com/jefer94",
+  "private": true,
+  "dependencies": {}
+}

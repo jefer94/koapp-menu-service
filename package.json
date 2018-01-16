@@ -1,0 +1,12 @@
+{
+  "name": "koapp-service-menu",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "jsesc": "^2.2.0"
+  },
+  "author": "Jeferson",
+  "license": "MIT",
+  "keywords": ["koapp", "koapp service", "king of app"]
+}
