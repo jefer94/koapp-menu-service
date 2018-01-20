@@ -10,7 +10,7 @@
   function loadFunction(structureService, $location, $interval) {
     let contain = [];
     let onload  = false
-    return { on, load };
+    return { on, load, generate };
 
     function load(paths, module,/*, softBy */) {
       contain = [];
@@ -22,6 +22,10 @@
       )(paths);
 
       onload = true;
+    }
+
+    function generate() {
+      return contain;
     }
 
     function on(event, callback) {
@@ -39,16 +43,12 @@
       _.forIn(paths, (value, key) => {
         structureService
           .getModule(value.path)
-          .then((module) => {
-            const color = (value.bgColor) ? '#' + value.bgColor.replace('#','') : '';
-            const currentClass = ($location.path() === value.path) ? 'selectedpmenu' : '';
+          .then(module => {
             contain.push({
-              text: module.name,
-              icon: module.icon,
-              url: "#" + value.path,
-              backgroundImage: value.bgImage,
-              backgroundColor: color,
-              class: currentClass
+              text   : module.name,
+              icon   : module.icon,
+              url    : "#" + value.path,
+              active : $location.path() === value.path
             });
           })
           .catch(console.error);
